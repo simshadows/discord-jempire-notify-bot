@@ -70,7 +70,7 @@ class ClepBot(Client):
     
     async def on_voice_state_update(self, before, after):
         if not before.id in USER_LISTEN_SET:
-            print("on_voice_state_update from Jempire, but not from a listened user in WvW.")
+            print("on_voice_state_update from Jempire, but not from a listened user.")
             return
 
         before_voice = before.voice.voice_channel
